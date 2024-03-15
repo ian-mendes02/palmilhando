@@ -1,4 +1,4 @@
 <?php
-    header("Location: https://palmilhando.com.br/assinatura/");
-    die();
+    header("Location: ./assinatura");
+    exit();
 ?>
