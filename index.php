@@ -1,4 +1,4 @@
 <?php
-    header("Location: ./assinatura");
+    header("Location: ./assinatura/index.html");
     exit();
 ?>
