@@ -1,0 +1,148 @@
+#header {
+    background: url(../img/palmilhando-header-bg.webp);
+    background-size: cover;
+    background-position: top;
+}
+
+#saiba-mais::before, #saiba-mais:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+
+#saiba-mais::before {
+    background: url('../img/svg/white-tab.svg');
+    top: 0;
+    transform: translateY(-100%);
+}
+
+#criadores::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/andre-banner.webp);
+    background-size: cover;
+    background-position: top right;
+    height: 100%;
+    width: 50%;
+    max-width: 32rem;
+    transform: scaleX(-1);
+    opacity: .3;
+    -webkit-mask-image: linear-gradient(to right, transparent, black, black 80%)
+}
+
+#criadores::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/clayton-banner.webp);
+    background-size: cover;
+    background-position: top left;
+    height: 100%;
+    width: 50%;
+    max-width: 32rem;
+    transform: scaleX(-1);
+    opacity: .3;
+    -webkit-mask-image: linear-gradient(to left, transparent, black, black 80%)
+}
+
+#podoshop-clube::before, #modulos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/chuva-palmilhas.webp);
+    opacity: .3;
+    filter: blur(15px);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent)
+}
+
+#aulas-carrossel .carousel-content-wrapper {
+    mask-image: linear-gradient(0deg, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: -webkit-linear-gradient(0deg, transparent, black 15%, black 85%, transparent);
+}
+
+@media screen and (max-width:820px) {
+    #aulas-carrossel .carousel-content-wrapper {
+        mask-image: none;
+        -webkit-mask-image: none
+    }
+}
+
+#investimento li {
+    font-size: .8rem;
+}
+
+#investimento li:not(:last-of-type) {
+    margin-bottom: .5rem;
+}
+
+#tabela-planos {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+#tabela-planos td, #tabela-planos th {
+    padding: .75rem;
+    text-align: center;
+}
+
+#tabela-planos th {
+    font-weight: 700;
+}
+
+@media screen and (min-width:1600px) {
+    #modulos {
+        padding-top: 7.5vw;
+    }
+}
+
+@media screen and (max-width:820px) {
+
+    #criadores::before {
+        max-width: 80%;
+        width: 80%;
+        height: 50%;
+        top: 0;
+        left: -25%;
+        -webkit-mask-image: linear-gradient(to top, transparent, black, black 80%)
+    }
+
+    #criadores::after {
+        max-width: 80%;
+        width: 80%;
+        height: 50%;
+        top: auto;
+        bottom: 0;
+        right: -25%;
+        -webkit-mask-image: linear-gradient(to top, transparent, black, black 80%)
+    }
+
+    #tabela-planos td, #tabela-planos th {
+        padding: .5rem .25rem;
+        font-weight: 400;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    #criadores::before {
+        -webkit-mask-image: linear-gradient(to top, transparent 25%, black)
+    }
+
+    #criadores::after {
+        -webkit-mask-image: linear-gradient(to top, transparent 25%, black)
+    }
+}
